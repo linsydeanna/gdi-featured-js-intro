@@ -60,8 +60,8 @@
         <h2>Class 2</h2>
         <h3>Tonight's Agenda</h3>
         <p>7:00 - 7:30 Homework Review</p>
-        <p>7:30 - 8:00 Functions</p>
-        <p>?</p>
+        <p>7:30 - 8:15 Functions</p>
+        <p>8:15 - 9:00 Comparison Operators/If-else statements/Logical Operators</p>
       </section>
 
       <section>
@@ -161,10 +161,6 @@ addNumbers(9, 12); // outputs 21
           <strong>Bonus:</strong>
         </p>
         <p>Log the data types of your arguments to the console.</p>
-        <p>(Google it!
-          <span>
-            <i class="em em-grinning"></i>
-          </span>)</p>
       </section>
 
       <!-- returning values -->
@@ -307,7 +303,6 @@ if (age &gt; 18) {
             <tr>
               <th>Example</th>
               <th>Name</th>
-              <th>Result</th>
             </tr>
           </thead>
           <tbody>
@@ -316,96 +311,48 @@ if (age &gt; 18) {
                 <code>a == b</code>
               </td>
               <td>Equal</td>
-              <td>
-                <strong>
-                  <code>TRUE</code>
-                </strong> if
-                <code>a</code> is equal to
-                <code>b</code> (can be different types).</td>
             </tr>
             <tr>
               <td>
                 <code>a === b</code>
               </td>
-              <td>Identical</td>
-              <td>
-                <strong>
-                  <code>TRUE</code>
-                </strong> if
-                <code>a</code> is equal to
-                <code>b</code>, and the same type. </td>
+              <td>Identical (Or strictly equal)</td>
             </tr>
             <tr>
               <td>
                 <code>a != b</code>
               </td>
               <td>Not equal</td>
-              <td>
-                <strong>
-                  <code>TRUE</code>
-                </strong> if
-                <code>a</code> is not equal to
-                <code>b</code> (can be different types).</td>
             </tr>
             <tr>
               <td>
                 <code>a !== b</code>
               </td>
-              <td>Not identical</td>
-              <td>
-                <strong>
-                  <code>TRUE</code>
-                </strong> if
-                <code>a</code> is not equal to
-                <code>b</code>, or they are not the same type.</td>
+              <td>Not identical (Or not strictly equal)</td>
             </tr>
             <tr>
               <td>
                 <code>a &lt; b</code>
               </td>
               <td>Less than</td>
-              <td>
-                <strong>
-                  <code>TRUE</code>
-                </strong> if
-                <code>a</code> is strictly less than
-                <code>b</code>.</td>
             </tr>
             <tr>
               <td>
                 <code>a &gt; b</code>
               </td>
               <td>Greater than</td>
-              <td>
-                <strong>
-                  <code>TRUE</code>
-                </strong> if
-                <code>a</code> is strictly greater than
-                <code>b</code>.</td>
             </tr>
             <tr>
               <td>
                 <code>a &lt;= b</code>
               </td>
               <td>Less than or equal to </td>
-              <td>
-                <strong>
-                  <code>TRUE</code>
-                </strong> if
-                <code>a</code> is less than or equal to
-                <code>b</code>.</td>
             </tr>
             <tr>
               <td>
                 <code>a &gt;= b</code>
               </td>
               <td>Greater than or equal to </td>
-              <td>
-                <strong>
-                  <code>TRUE</code>
-                </strong> if
-                <code>a</code> is greater than or equal to
-                <code>b</code>.</td>
             </tr>
           </tbody>
         </table>
@@ -426,19 +373,34 @@ if (age &gt; 18) {
       </section>
 
       <section>
+        <h3>Experiment!</h3>
+        <p>What happens when you log the following statements to your console?</p>
+        <code>'5' == 5</code>
+        <code>'5' === 5</code>
+      </section>
+
+      <section>
         <h3>Let's Develop It</h3>
+        <p>
+          <strong>Challenge:</strong>
+        </p>
         <p>Make a variable called "temperature". Write some code that tells you to put on a coat if it is below 50 degrees.</p>
+        <p>
+          <strong>Bonus:</strong>
+        </p>
+        <p>Change the condition to also check whether you are a human or a polar bear. (Check for both conditions in the same
+          if statement.)</p>
       </section>
 
       <!--If/else -->
-      <section>
+      <!-- <section>
         <h3>Even more control flow</h3>
         <img src="dist/img/toomanysigns.jpg" alt="Sign post with multiple signs" />
         <p class="credit">Photo credit:
           <a href="http://www.flickr.com/photos/thomashawk/2402598275/" target="_blank">Thomas Hawk</a>
           <a href="http://creativecommons.org/licenses/by-nc/2.0/" target="_blank">cc</a>
         </p>
-      </section>
+      </section> -->
 
       <section>
         <h3>The if/else statement</h3>
@@ -550,7 +512,7 @@ if (age &gt;= 35) {
         <pre><code class="javascript">var age = 30;
 var yearsAsCitizen = 30;
 
-if (age &gt;=30 &amp;&amp; yearsAsCitizen &gt; 9) {
+if (age &gt;= 30 &amp;&amp; yearsAsCitizen &gt; 9) {
   console.log('You can run for the Senate!');
 } else {
   console.log('You are not eligible to run for the Senate');
@@ -558,9 +520,20 @@ if (age &gt;=30 &amp;&amp; yearsAsCitizen &gt; 9) {
       </section>
 
       <section>
+        <h3>Experiment!</h3>
+        <p>What happens when you log the following statements to your console?</p>
+        <code>true && true</code>
+        <code>true && false</code>
+        <code>false && false</code>
+        <code>true || true</code>
+        <code>true || false</code>
+        <code>false || false</code>
+      </section>
+
+      <!-- <section>
         <h3>Let's Develop It</h3>
         <p>Add a logical operator to your "what to wear" program.</p>
-      </section>
+      </section> -->
 
       <!-- Final slides-->
       <section>
